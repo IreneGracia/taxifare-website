@@ -57,8 +57,7 @@ if passenger_count <= 0 or passenger_count > 8:
 # Date and time validation
 if combined_datetime is None:
     error_messages.append("Invalid date or time provided.")
-elif combined_datetime < datetime.now():
-    error_messages.append("Pickup date and time cannot be in the past.")
+
 
 # Display error messages if any
 if error_messages:
